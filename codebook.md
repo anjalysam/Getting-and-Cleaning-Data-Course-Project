@@ -2,9 +2,11 @@
 The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project’s definition.
 
 #Download the dataset
+
 Dataset downloaded and extracted under the folder called UCI HAR Dataset
 
 #Assign each data to variables
+
 features <- features.txt : 561 rows, 2 columns
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ.
 activities <- activity_labels.txt : 6 rows, 2 columns
@@ -23,6 +25,7 @@ y_train <- test/y_train.txt : 7352 rows, 1 columns
 contains train data of activities’code labels
 
 #Merges the training and the test sets to create one data set
+
 X (10299 rows, 561 columns) is created by merging x_train and x_test using rbind() function
 Y (10299 rows, 1 column) is created by merging y_train and y_test using rbind() function
 Subject (10299 rows, 1 column) is created by merging subject_train and subject_test using rbind() function
